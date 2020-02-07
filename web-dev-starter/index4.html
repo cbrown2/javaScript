@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+  	body{
+  		background-color:gray; 
+  	}
+  	table{
+  		font-family:arial, sans-serif;
+  		border-collapse: collapse;
+  		width:75%;
+  		margin:auto;
+  	}
+  	td,th{
+  	border: 1px solid #dddddd;
+ 	text-align: center;
+  	padding: 8px;
+  	color:white;
+  	font-size:1.5em;
+  	}
+  	tr:nth-child(even) {
+  	background-color: blue;
+  </style>
+</head>
+<body>
+<table border="1">
+<tr><th>Miles</th><th>Kilometers</th></tr>
+<script>
+	for(i=1;i<=75;i++){
+		c=(i*1.60934).toFixed(1)
+	
+document.write("<tr><td>"+i+"</td><td>" + c +"</td></tr>")
+}
+</script>
+</body>
+</html>
